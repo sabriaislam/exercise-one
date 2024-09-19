@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise One</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href ="#box-model">Box Model</a></li>
+                <li><a href ="#flexbox">Flexbox</a></li>
+                <li><a href ="#positioning-elements">Positioning Elements</a></li> 
+                <li><a href ="#heading-usage">Heading Usage</a></li>
+                <li><a href ="#simple-javascript">Simple JavaScript</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="box-model" class="box-model-section">
+            <div class ="box-model-wrapper">
+                <h2>CS Box Model</h2>
+                <p>/*Padding is inside of the element in CSS*/</p>
+                <p><strong>padding: 40px</strong></p>
+                <p>/*Margin is outside of the element in CSS*/</p>
+                <p><strong>margin: 40px (outside)</strong></p>
+                <p>/*Border is added to the width and height of element in CSS*/</p>
+                <p><strong>border: 10 px solid green</strong></p>
+            </div>
+        </section>
+        <section id="flexbox" class="flexbox-section">
+            <div class="flexbox-wrapper">
+                <div class ="flexbox-title">
+                    <div class ="title-box">
+                        <h2>Display: Flex</h2>
+                    </div>
+                </div>
+                <div class ="flexbox-element flexbox-bottom">
+                    <div class ="flexbox-element flexbox-left">
+                        <div class = "box"></div>
+                        <div class = "box"></div> 
+                        <div class = "box"></div>
+                    </div>
+                    <div class ="flexbox-element flexbox-right">
+                        <div class = "box"></div>
+                        <div class = "box"></div>
+                        <div class = "box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="positioning-elements" class ="positioning-section">
+            <div class="positioning-wrapper">
+                <h2>Positioning <br> Elements</h2>
+                <div class="circle circle-1" style="top: -100px; left: 900px"></div>
+                <div class="circle circle-2" style="top: 0px; left: 850px"></div>
+                <div class="circle circle-3" style="bottom: 100px; right: -50px"></div>
+                <div class="square square-1" style="top: -500px; left: 450px"></div>
+                <div class="square square-2" style="bottom: 500px; right: -950px"></div>
+            </div>
+        </section>
+        <section id="heading-usage" class="heading-section">
+            <div class ="heading-wrapper">
+                <h1>Proper Heading Usage (h1)</h1>
+                <h2>A heading describes the content below (h2)</h2>
+                <h3>Style of the text is not relevant (h3)</h3>
+                <p>Here is a paragraph about why text-size does not affect the order of the headings. We want to consider the heirarchy of the information and not the styling for determining which tag we choose. (p)</p>
+                <h4>This could be another heading about text size (h4)</h4>
+                <p>And you could put another paragraph (or two, or three...) under this further describing this concept. (p)</p>
+            </div>
+        </section>
+        <section id="simple-javascript" class = "simple-js-section">
+            <div class = "js-wrapper">
+                <script>
+                    let counterValue = 0 
+                    function increaseCounterClick(){
+                        counterValue++;
+                        const counterDiv = document.querySelector("#counter");
+                        counterDiv.innerHTML = counterValue;
+                    }
+                </script>
+                <h2>Simple JavaScript</h2>
+                <div class="button-wrapper">
+                    <p id="counter">0</p>
+                    <div id="button">
+                        <button onClick="increaseCounterClick()">Click to Increase</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class= "student-section">
+            <div class="name-wrapper">
+                <h1>Sabria Islam Fall 2024</h1>
+            </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>
